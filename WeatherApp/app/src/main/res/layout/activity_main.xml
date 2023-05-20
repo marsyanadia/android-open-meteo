@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintEnd_toEndOf="@+id/tvHasilKoor2"
+        app:layout_constraintStart_toStartOf="@+id/tvHasilKoor2"
+        app:layout_constraintTop_toBottomOf="@+id/tvHasilKoor2"
+        tools:text="Longitude" />
+
+    <TextView
+        android:id="@+id/tvHasilKoor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvHasilKoor1"
+        app:layout_constraintTop_toTopOf="@+id/tvHasilKoor1"
+        tools:text="28 C" />
+
+    <TextView
+        android:id="@+id/tvHasilKoor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="56dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvHasilWS"
+        app:layout_constraintTop_toTopOf="@+id/tvHasilWS"
+        tools:text="28 C" />
+
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHasilKoor1"
+        app:layout_constraintStart_toStartOf="@+id/tvHasilKoor1"
+        app:layout_constraintTop_toBottomOf="@+id/tvHasilKoor1"
+        tools:text="Latitude" />
+
+    <TextView
+        android:id="@+id/tvWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins"
+
+        app:layout_constraintEnd_toEndOf="@+id/tvHasilWS"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="@+id/tvHasilWS"
+        app:layout_constraintTop_toBottomOf="@+id/tvHasilWS"
+        tools:text="Wind Speed" />
+
+    <TextView
+        android:id="@+id/tvHasilWS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+
+        app:layout_constraintStart_toEndOf="@+id/tvHasilT"
+        app:layout_constraintTop_toTopOf="@+id/tvHasilT"
+        tools:text="28 C" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Location" />
+
+    <ImageView
+        android:id="@+id/iconWeather"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconWeather"
+        tools:text="condition" />
+
+
+    <TextView
+        android:id="@+id/tvHasilT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="24dp"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCondition"
+        tools:text="28 C"
+        android:fontFamily="@font/poppins"
+        />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHasilT"
+        app:layout_constraintStart_toStartOf="@+id/tvHasilT"
+        app:layout_constraintTop_toBottomOf="@+id/tvHasilT"
+        tools:text="temperature"
+        android:fontFamily="@font/poppins"
+        />
+
+    <TextView
+        android:id="@+id/tvDaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemperature"
+        tools:text="Daily Weather"
+        android:fontFamily="@font/poppins"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWeather"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tvDaily"
+        app:layout_constraintTop_toBottomOf="@+id/tvDaily" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
